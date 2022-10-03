@@ -9,17 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="border-box min-w-min overflow-x-hidden text-white">
-    <nav class="bg-zinc-900 text-white text-center flex justify-center px-16">
-      <ul class="nav-list pl-3.5 flex justify-center items-center h-full text-center">
-        <li class="p-3 list-none"><a href="#home">HOME</a></li>
-        <li class="p-3 list-none"><a href="#about">ABOUT</a></li>
-        <li class="p-3 list-none"><a href="#portofolio">PORTOFOLIO</a></li>
-        <li class="p-3 list-none"><a href="#contact">CONTACT</a></li>
-        <li class="btn"><a href="#services">SERVICE</a></li>
-      </ul>
-    </nav>
-    <header class="bg-blue-800 text-white md:flex gap-x-10 p-16 h-auto">
+  <body class="border-box overflow-x-hidden text-white">
+    <nav class="w-full shadow bg-stone-900 h-[100px] items-center flex justify-between p-5 ">
+      <div class="container m-auto flex items-center text-white">
+          <h1 class="flex text-xl font-bold">NANIK WIJAYANTI</h1>
+      </div>
+      <div class="hidden md:flex">
+          <ul class="md:flex justify-center items-center pr-10 text-white text-base font-semibold">
+              <li class="hover:text-blue-800 mr-10 transition-all duration-300"> <a href="#home">Home</a></li>
+              <li class="hover:text-blue-800 mr-10 transition-all duration-300"> <a href="#about">About</a></li>
+              <li class="hover:text-blue-800 mr-10 transition-all duration-300"> <a href="#portofolio">Portofolio</a></li>
+              <li class="hover:text-blue-800 mr-10 transition-all duration-300"> <a href="#contact">Contact</a></li>
+              <li class="hover:text-blue-800 mr-0 transition-all duration-300"> <a href="#services">Service</a></li>
+          </ul>
+      </div>
+      <button class="block md:hidden py-4 px-4 rounded focus:outline-none hover:bg-stone-800 group">
+          <div class="w-5 h-1 bg-white mb-1 rounded"></div>
+          <div class="w-5 h-1 bg-white mb-1 rounded"></div>
+          <div class="w-5 h-1 bg-white rounded"></div>
+          <div class="absolute -right-0 top-0 h-5/6 w-8/12 bg-white border rounded shadow-xl opacity-0 group-focus:right-0 group-focus:opacity-100 transition-all duration-300">
+              <ul class="flex flex-col items-center w-full text-base pt-5 pb-5">
+                  <li class="text-slate-800 font-bold hover:text-white hover:bg-blue-800 py-4 w-full shadow-sm transition-all duration-300"> <a href="#home">Home</a></li>
+                  <li class="text-slate-800 font-bold hover:text-white hover:bg-blue-800 py-4 w-full shadow-sm transition-all duration-300"> <a href="#about">About</a></li>
+                  <li class="text-slate-800 font-bold hover:text-white hover:bg-blue-800 py-4 w-full shadow-sm transition-all duration-300"> <a href="#portofolio">Portofolio</a></li>
+                  <li class="text-slate-800 font-bold hover:text-white hover:bg-blue-800 py-4 w-full shadow-sm transition-all duration-300"> <a href="#contact">contact</a></li>
+                  <li class="text-slate-800 font-bold hover:text-white hover:bg-blue-800 py-4 w-full shadow-sm transition-all duration-300"> <a href="#services">Service</a></li>
+                  
+              </ul>
+          </div>
+      </button>   
+  </nav>
+    <header class="bg-blue-800 text-white md:flex gap-x-10 p-5 h-auto text-center">
       <section id="home" class="justify-center">
         <div class="container">
         <img class="rounded-full" src="assets/images/Foto1.jpeg" alt="gambar" />
@@ -31,7 +51,7 @@
       </div>
       </section>
       <section>
-        <p class="text-xl text-justify my-10">
+        <p class="text-xl text-justify mt-10">
           Saya Nanik, mahasiswa semester 4 program studi Sistem Informasi
           Universitas Alma Ata Yogyakarta angkatan 2020. Sedang menjalankan
           posisi sebagai Ketua Koordinator Departemen Pengembangan Pendidikan
@@ -44,9 +64,9 @@
           suatu detail dan memiliki jiwa sosial yang tinggi, serta mampu bekerja
           secara individu maupun dalam tim.
         </p>
-        <div class="text-5xl text-orange-400 mt-8">
-          <ul class="justify-center flex flex-row-reverse space-x-10 space-x-reverse">
-            <li><a class="" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <div class="text-xl md:text-5xl grid grid-cols-5  md:grid-cols-4 text-orange-400 mt-8">
+          <ul class="flex">
+            <li><a class="p-3" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
             <li><a class="p-3 list-none" href="#"><i class="fa-regular fa-envelope"></i></a></li>
             <li>
               <a class="p-3 list-none" href="https://www.linkedin.com/in/nanik-wijaya-23873a221"><i class="fa-brands fa-linkedin"></i></a>
@@ -56,9 +76,9 @@
         </div>
       </section>
     </header>
-    <main id="about" class="p-5 md:pl-15 md:pr-15 lg:pl20 lg:pr-20">
+    <main id="about" class="p-5 md:pl-15 md:pr-15 lg:pl-20 lg:pr-20">
       <h1 class="text-black font-extrabold text-2xl text-center pb-5">TENTANG SAYA</h1>
-      <section class="p-5 flex grid grid-cols-2 gap-12 text-black text-justify">
+      <section class="p-5 flex grid grid-cols-1 md:grid-cols-2 gap-2  text-black text-justify">
         <h2 class="text-xl font-bold">PENDIDIKAN</h1>
         <div>
           <h3 class="font-bold">UNIVERSITAS ALMA ATA YOGYAKARTA</h3>
@@ -72,7 +92,7 @@
         </div>
         </section>
 
-        <section class="p-5 flex grid grid-cols-2 gap-12 text-black text-justify ">
+        <section class="p-5 flex grid grid-cols-1 md:grid-cols-2 gap-2 text-black text-justify ">
         <h2 class="text-xl font-bold">SERTIFIKAT & PENGHARGAAN</h1>
         <div>
           <h3 class="font-bold">Kementrian Hukum & Asasi Manusia</h3>
@@ -117,8 +137,8 @@
         <p>Bandung - 25 Juli 2022</p>
       </div>
       </section>
-      <section class="p-5 flex grid grid-cols-2 gap-12 text-black text-justify ">
-        <h1 class="text-xl my-4 font-bold">ORGANISASI</h1>
+      <section class="p-5 flex grid grid-cols-1 md:grid-cols-2 gap-2 text-black text-justify ">
+        <h1 class="text-xl mt-4 font-bold">ORGANISASI</h1>
         <div>
           <h3 class="font-bold">Himpunan Mahasiswa Sistem Informasi</h3>
           <p>Koordinator Departemen Pengembangan Pendidikan Minat & Bakat</p>
@@ -147,8 +167,8 @@
      </section>
     
   </section>
-      <section class="p-5 flex grid grid-cols-2 gap-12 text-black text-justify ">
-          <h2 class="text-xl my-4 font-bold">SOFTWARE & PROGRAMMING LANGUAGE</h1>
+      <section class="p-5 flex grid grid-cols-1 md:grid-cols-2 gap-2 text-black text-justify ">
+          <h2 class="text-xl mt-4 font-bold">SOFTWARE & PROGRAMMING LANGUAGE</h1>
           <div>
           <p >HTML Dasar</p>
           <p>CSS</p>
@@ -157,8 +177,8 @@
           <p>Javascript</p>
         </div>
         </section>
-        <section class="p-5 flex grid grid-cols-2 gap-12 text-black ">
-        <h2 class="text-xl my-4 font-bold">KEMAMPUAN</h1>
+        <section class="p-5 flex grid grid-cols-1 md:grid-cols-2 gap-2 text-black ">
+        <h2 class="text-xl mt-4 font-bold">KEMAMPUAN</h1>
         <div>
           <p>UI/UX Desain</p>
           <p>Resolusi Konflik</p>
@@ -175,7 +195,7 @@
             <h2 class="text-center font-bold text-1xl">ENGINEERING DAN LAINNYA</h2>
           </div>
           <div class="gambar-portofolio">
-            <article class="p-10 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            <article class="p-5 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
               <div class="flex justify-center text-6xl bg-blue-800 rounded drop-shadow-lg">
                 <div>
                   <img src="assets/images/Portofolio.jpg" alt="gambar-portofolio">
